@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Four Sorting Algorithms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Four Common Sorting Algorithms</h1>
+        <p>A basic overview and code samples for common sorting methods</p>
+    </header>
+
+    <main>
+        <!-- Insertion Sort Section -->
+        <div id="insertion-sort" class="algorithm">
+            <h2>Insertion Sort</h2>
+            <p>
+                Insertion sort is a simple sorting algorithm that builds the sorted
+                array one item at a time. It is much like sorting playing cards in
+                your hands.
+            </p>
+            <pre><code class="language-javascript">
+// Insertion Sort Implementation
+function insertionSort(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        let key = arr[i];
+        let j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
+    }
+    return arr;
+}
+            </code></pre>
+        </div>
+
+        <!-- Bubble Sort Section -->
+        <div id="bubble-sort" class="algorithm">
+            <h2>Bubble Sort</h2>
+            <p>
+                Bubble sort repeatedly steps through the list, compares adjacent
+                elements and swaps them if they are in the wrong order.
+            </p>
+            <pre><code class="language-javascript">
+// Bubble Sort Implementation
+function bubbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+            </code></pre>
+        </div>
+
+        <!-- Merge Sort Section -->
+        <div id="merge-sort" class="algorithm">
+            <h2>Merge Sort</h2>
+            <p>
+                Merge sort is an efficient, general-purpose, comparison-based sorting
+                algorithm. It divides the input array into halves, recursively sorts them, and then merges the sorted halves.
+            </p>
+            <pre><code class="language-javascript">
+// Merge Sort Implementation
+function mergeSort(arr) {
+    if (arr.length <= 1) return arr;
+    const mid = Math.floor(arr.length / 2);
+    const left = mergeSort(arr.slice(0, mid));
+    const right = mergeSort(arr.slice(mid));
+    return merge(left, right);
+}
+function merge(left, right) {
+    const result = [];
+    let i = 0, j = 0;
+    while (i < left.length && j < right.length) {
+        if (left[i] < right[j]) result.push(left[i++]);
+        else result.push(right[j++]);
+    }
+    return result.concat(left.slice(i)).concat(right.slice(j));
+}
+            </code></pre>
+        </div>
+
+        <!-- Quick Sort Section -->
+        <div id="quick-sort" class="algorithm">
+            <h2>Quick Sort</h2>
+            <p>
+                Quick sort is a divide-and-conquer algorithm that picks a pivot element and partitions the array around the pivot.
+            </p>
+            <pre><code class="language-javascript">
+// Quick Sort Implementation
+function quickSort(arr) {
+    if (arr.length <= 1) return arr;
+    const pivot = arr[0];
+    const left = arr.slice(1).filter(x => x < pivot);
+    const right = arr.slice(1).filter(x => x >= pivot);
+    return [...quickSort(left), pivot, ...quickSort(right)];
+}
+            </code></pre>
+        </div>
+    </main>
+
+    <footer id="page-footer">
+        <p>Created for educational purposes. &copy; 2025</p>
+    </footer>
+</body>
+</html>

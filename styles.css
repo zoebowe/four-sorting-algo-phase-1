@@ -1,0 +1,54 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Code+Pro&display=swap');
+
+/* Universal styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+header, main, footer {
+    padding: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    margin-top: 1.5em;
+    color: #333;
+}
+
+.algorithm {
+    margin-bottom: 2rem;
+}
+
+pre, code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+footer#page-footer {
+    background-color: #2e003e; /* SFSU Purple */
+    color: #ffcc00; /* SFSU Gold */
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 4px solid #ccc;
+}
