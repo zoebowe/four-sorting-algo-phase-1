@@ -9,29 +9,20 @@ This project demonstrates four commonly used sorting algorithms using basic HTML
 
 ## 🌐 Live Website
 
-You can view the live webpage here: [GitHub Pages Link](https://your-username.github.io/sorting-algorithms)
-
-> ⚠️ Replace the above link with your actual GitHub Pages URL after deployment.
+You can view the live webpage here: [GitHub Pages Link](https://zoebowe.github.io/four-sorting-algo-phase-1/)
 
 ## 📁 Repository Structure
 
 ```
 sorting-algorithms/
 ├── index.html      # Main webpage with HTML structure
-├── styles.css      # Styling for layout, font, and footer
 ```
 
-## 🎨 Features
+## ✅ Features
 
 - Semantic HTML5 structure
-- Syntax-highlighted JavaScript examples
-- Clean layout with modern fonts
-- Styled footer using SFSU brand colors (bonus)
-
-## 📚 Fonts Used
-
-- **Inter** for text (via [Google Fonts](https://fonts.google.com/specimen/Inter))
-- **Source Code Pro** for code blocks (via [Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro))
+- Readable JavaScript examples
+- Compatible with all modern browsers
 
 ## 🚀 Deployment
 
