@@ -41,6 +41,8 @@ pre, code {
     padding: 1em;
     border-radius: 6px;
     overflow-x: auto;
+    line-height: 1.5;
+    white-space: pre-wrap;
 }
 
 footer#page-footer {
