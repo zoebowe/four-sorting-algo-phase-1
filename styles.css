@@ -40,7 +40,7 @@ h2 {
 
 /* Code block styles */
 pre, code {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
     background-color: #f0f0f0;
     padding: 1.25em;
     border-radius: 6px;
