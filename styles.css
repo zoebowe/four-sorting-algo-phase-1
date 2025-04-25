@@ -40,15 +40,14 @@ h2 {
 
 /* Code block styles */
 pre, code {
-    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
-    background-color: #f0f0f0;
+    font-family: monospace;
+    background-color: #eeeeee;
     padding: 1.25em;
     border-radius: 6px;
     overflow-x: auto;
     white-space: pre;
-    line-height: 1.6;
+    line-height: 1.5;
     font-size: 1rem;
-    tab-size: 4;
 }
 
 
